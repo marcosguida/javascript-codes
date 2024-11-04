@@ -1,0 +1,135 @@
+#area
+{
+  position:relative;
+  left:37%;
+  top:10em;
+  width:320px;
+  height:270px;
+}
+#area #formulario
+{
+  position:absolute;
+  display:block;
+  box-shadow: 10px 5px 5px black;
+}
+
+
+fieldset
+{
+  background-color:#A7C0DC;
+  width:300px;
+  height:250px;
+}
+legend
+{
+  font-weight:bold;
+  font-family: "Segoe UI","Arial","Times New Roman";
+}
+#formulario label
+{
+  position:absolute;
+  left:19px;
+  margin-right:5px;
+}
+#formulario input.campo_nome
+{
+  background-color:#f1ff00;
+  position:absolute;
+  left:95px;
+  top:23px;
+  width:225px;
+}
+#formulario input.campo_email
+{
+  background-color:#f1ff00;
+  position:absolute;
+  left:95px;
+  margin-top:2px;
+  width:225px;
+}
+#formulario textarea.msg
+{
+  position:absolute;
+  background-color:#f1ff00;
+}
+
+
+
+
+html, body{
+  height: 250px;
+}
+
+.container{
+  width: 350px;
+  height: 150px;
+  background: linear-gradient(0, #120c56, #000000);
+}
+
+.stars{
+  position: relative;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  box-shadow: 50px 30px white, 
+    100px 80px white,
+    80px 120px white,
+    300px 20px white,
+    250px 130px white,
+    200px 50px white,
+    150px 100px white,
+    320px 100px white;
+  animation: anim-stars 10s linear infinite;
+}
+
+.stars::after{
+  content: " ";
+  position: absolute;
+  top: 150px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  box-shadow: 50px 30px white, 
+    100px 80px white,
+    80px 120px white,
+    300px 20px white,
+    250px 130px white,
+    200px 50px white,
+    150px 100px white,
+    320px 100px white;
+}
+
+
+@keyframes anim-stars {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-150px);
+    }
+}
+
+
+#formulario input.btn_submit
+{
+  border-style:dashed;
+  position:absolute;
+  bottom: 0.5em;
+  right:10px;
+  background-color:#f1ff00;
+}
+
+/*
+  Click and drag to attract
+  Right click to repulse
+  Mouse-wheel click to create a time dilation field
+  Use the Controls to decrease or increase
+  the particle count to tweak performance.
+*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+

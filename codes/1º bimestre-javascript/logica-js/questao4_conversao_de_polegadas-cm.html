@@ -1,0 +1,19 @@
+<script>
+    /*Criar um algoritmo que imprima uma listagem de 
+    conversão de polegadas para centímetros. Deseja-se que
+     na listagem conste valores desde 1 polegada até 20 
+     polegadas inteiras. Obs.: 1 polegada corresponde a 2,54 cm.*/
+
+
+     let pol;
+     texto="";
+     for(pol=1;pol<=20;pol++)
+     {
+        //texto+= pol+" polegadas é igual a "+(pol*2.54)+", cm\n";
+        if(pol==1)
+            texto+=`${pol} polegada é igual a ${pol*2.54} cm\n`;
+        else
+            texto+=`${pol} polegadas é igual a ${pol*2.54} cm\n`;
+     }
+     alert(texto);
+</script>

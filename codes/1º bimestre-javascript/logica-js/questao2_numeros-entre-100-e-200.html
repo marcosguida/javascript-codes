@@ -1,0 +1,16 @@
+<script>
+
+//Ler vários números e informar quantos números entre 100 e 200 foram digitados. Quando o valor 0 (zero) for lido, o algoritmo deverá cessar  sua execução.
+
+    let cont=0
+    do 
+    {
+        var num=parseFloat(prompt("Digite um número"));
+        
+        if (num>100 && num<200)
+            cont++
+        
+    }while(num!=0)
+    alert('Você digitou '+cont+' números que estão entre 100 e 200')
+    
+</script>

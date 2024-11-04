@@ -1,0 +1,17 @@
+<script>
+    //Criar um algoritmo que calcule e imprima o valor de bn. O valor de n devera ser maior que 1 e inteiro e o valor de b maior ou igual a 2 e inteiro.
+    //Obs.: Não utilize o operador de exponenciação da linguagem, nem funções da biblioteca Math. Faça a multiplicação de “b” “n” vezes.
+    
+    let base = parseInt(prompt ("Digite um valor para a base:  "));
+    let expo = parseInt(prompt ("Digite um valor para o expoente:  "));
+    let result_potencia = 1;
+
+    if (expo>1 && base>=2){
+        
+        for(let y=0; y<expo; y++){
+             result_potencia = result_potencia * base;
+}
+    }
+    alert(base+"^"+expo+" = "+result_potencia)
+    
+    </script>

@@ -1,0 +1,21 @@
+<script>
+//Fazer um algoritmo para ler vinte números inteiros e mostrar quantos números são maiores que o último número informado pelo usuário.
+    let vet=[];
+    let quant=20;
+    let i;
+    
+    for(i=0;i<quant;i++)
+    {
+        vet[i]=parseFloat(prompt("Digite um número"));
+    }
+
+    let cont=0;
+
+    for(i=0;i<quant;i++)
+    {
+        if(vet[i]>vet[19])
+            cont++;
+    }
+    alert(cont+" números maiores que o último");
+
+</script>

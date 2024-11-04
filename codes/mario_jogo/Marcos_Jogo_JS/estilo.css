@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game{
+
+    width: 100%;
+    border-bottom: 40px solid #2F4F4F;
+    position: relative;
+    overflow: hidden;
+    background-image: url("./imagens/noite3.gif");
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0 auto;
+}
+
+.tubo{
+    position: absolute;
+    bottom: 0px;
+    width: 60px;
+    animation: tubo_animacao 1.5s infinite linear;
+
+}
+.mario{
+    height: 210px;
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    
+}
+.pular{
+    animation: pular_mario 500ms ease-out;
+}
+
+
+
+@keyframes tubo_animacao {
+    from{
+        right: 0%;
+
+    }to {
+        right: 100%;
+    }
+    
+}
+
+@keyframes pular_mario{
+    0%{
+        bottom: 0;
+    }
+    40%{
+        bottom: 180px;
+    }
+    50%{
+        bottom: 180px;
+    }
+    60%{
+        bottom: 180px;
+    }
+
+    100%{
+        bottom: 0 ;
+    }
+}

@@ -1,0 +1,48 @@
+<script>
+
+
+    function somarHora(h1,h2){
+        let final = {}, hrs, min, seg;
+        final.hrs = h1.hrs + h2.hrs
+        final.min = h1.min + h2.min
+        final.seg = h1.seg + h2.seg
+        if (final.seg >= 60) {
+            final.min += 1
+            final.seg -= 60
+        }
+        if (final.min >= 60) {
+            final.hrs += 1
+            final.min -= 60
+        }
+        return final
+    }
+ 
+ 
+    function mostrarHora(){
+ 
+        let horario1, horario2
+        horario1 = principal()
+        horario2 = principal()
+        let somar = somarHora(horario1, horario2)
+        alert(`Soma = ${soma.hrs} horas :${soma.min} minutos :${soma.seg}segundos`)
+       
+       
+    }
+ 
+    function principal(){
+        let HoraCompleta = {}, hrs, min, seg;
+        HoraCompleta.hrs = parseInt(prompt('Insira a quantidade de horas: '))
+        HoraCompleta.min = parseInt(prompt('Insira a quantidade de minutos: '))
+        HoraCompleta.seg = parseInt(prompt('Insira a quantidade de segundos: '))
+        return HoraCompleta
+    }
+ 
+ 
+    principal()
+ 
+ 
+ 
+ 
+ 
+ 
+ </script>

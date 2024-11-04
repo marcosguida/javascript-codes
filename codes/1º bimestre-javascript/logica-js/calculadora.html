@@ -1,0 +1,76 @@
+<script>
+
+  
+    function soma(a, b) {
+        let fr3 = {}, num, den
+        fr3.num = a.num * b.den + a.num * b.den
+        fr3.den = a.den * b.den
+        return fr3
+    }
+ 
+    function subtracao(a, b) {
+        let fr3 = {}, num, den
+        fr3.num = a.num * b.den - a.num * b.den
+        fr3.den = a.den * b.den
+        return fr3
+    }
+ 
+    function multiplicacao(a, b) {
+        let fr3 = {}, num, den
+        fr3.num = a.num * b.num
+        fr3.den = a.den * b.den
+        return fr3
+    }
+ 
+    function divisao(a, b) {
+        let fr3 = {}, num, den
+        fr3.num = a.num * b.den
+        fr3.den = a.den * b.num
+        return fr3
+    }
+    function lerfracao(){
+        let f={}
+        f.num = parseInt(prompt('Informe o numerador da fracao : '))
+        f.den = parseInt(prompt('Informe o denominador da fracao : '))
+        return f
+ 
+    }
+  
+    function principal() {
+       
+        let fracao1, fracao2, fFinal;
+        fracao1 = lerfracao()
+        fracao2 = lerfracao()
+       
+        let operacao = parseInt(prompt('Qual operacao deseja realizar com fracoes? \t\n 1 - Soma\t\n 2 - Subtracao\t\n 3 - Multiplicacao\t\n 4 - Divisao'))
+ 
+        if (operacao == 1) {
+            fFinal = soma(fracao1, fracao2)
+            alert(`Resultado: ${fFinal.num}/${fFinal.den} ou  ${fFinal.num/fFinal.den}`)
+        }
+ 
+        if (operacao == 2) {
+ 
+            fFinal = subtracao(fracao1,fracao2)
+            alert(`Resultado: ${fFinal.num}/${fFinal.den} ou  ${fFinal.num/fFinal.den}`)
+ 
+        }
+ 
+        if (operacao == 3){
+ 
+            fFinal = multiplicacao(fracao1,fracao2)
+            alert(`Resultado: ${fFinal.num}/${fFinal.den} ou  ${fFinal.num/fFinal.den}`)
+        }
+ 
+        if (operacao == 4){
+           
+            fFinal = divisao(fracao1,fracao2)
+            alert(`Resultado: ${fFinal.num}/${fFinal.den} ou  ${fFinal.num/fFinal.den}`)
+        }
+    }
+ 
+    principal()
+ 
+ </script>
+ 
+ 

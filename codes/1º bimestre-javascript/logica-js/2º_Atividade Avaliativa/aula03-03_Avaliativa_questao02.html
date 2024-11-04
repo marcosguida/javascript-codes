@@ -1,0 +1,26 @@
+<script>
+    //Segundo uma tabela médica, o peso ideal está relacionado com a altura e o sexo. Fazer um algoritmo que receba a altura e o sexo de uma pessoa,
+    // calcular e imprimir o seu peso ideal, utilizando as seguintes fórmulas:
+//Para homens: (72.7*H)-58
+//Para mulheres: (62.1*H)-44.7
+
+    
+    let idlH=parseFloat(prompt('Calculo de peso ideal \n Qual a sua altura ?'))
+    let idlS=prompt('Calculo de peso ideal \n Qual seu sexo (f - feminino / m - masculino) ? ')
+   
+    if ( idlS == 'f'){
+
+        Pesoidl=(62.1*idlH)-44.7
+        alert('O seu peso ideal : '+ Pesoidl+' kg')
+
+    }
+
+    if ( idlS == 'm'){
+
+        Pesoidl2=(72.7*idlH)-58
+        alert('O seu peso ideal : '+ Pesoidl2+' kg')
+
+}
+    
+    
+    </script>

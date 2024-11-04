@@ -1,0 +1,19 @@
+<script> 
+    //Criar um algoritmo que leia vários números e apresente o fatorial de cada número. O algoritmo se encerra quando se digita um número menor do que 1.
+
+    let valor;
+    do{
+        
+        valor=parseInt(prompt("Digite um número (para encerrar o programa digite um valor menor que 1): "))
+        let fatorial = 1
+        
+        for(let f=1; f<=valor; f++){
+            fatorial*=f;
+        
+        }
+        alert("O fatorial de "+valor+" é : "+fatorial)
+
+    }while(valor>1)
+    
+    
+    </script>
